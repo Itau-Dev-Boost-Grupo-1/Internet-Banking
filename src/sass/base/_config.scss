@@ -1,65 +1,13 @@
 // -------------------------
 //  FONTS
 //--------------------------
-$primary-font: "";
-$font-path: "../fonts/";
-
-//--------------------------
-// GRID
-//--------------------------
-$grid-wrapper: 1110px;
-$grid-columns: 12;
-$grid-gutter: 20px;
-$grid-gutter-half: $grid-gutter/2;
-
-// -------------------------
-//  IMAGE PATH
-//--------------------------
-$image-path: "../img/";
+$primary-font: Arial, Helvetica, sans-serif;
 
 // -------------------------
 //  COLORS
 //--------------------------
-$primary-color: rgb(250, 114, 104);
-$second-color: rgb(0, 0, 0);
-$second-color__05: rgba($second-color, 0.05);
-$second-color__10: rgba($second-color, 0.1);
-$second-color__30: rgba($second-color, 0.3);
-$second-color__60: rgba($second-color, 0.6);
-$white: rgb(255, 255, 255);
-
-// -------------------------
-//  SIZES
-//--------------------------
-$sizes: (
-  xxs: rem(12px),
-  xs: rem(14px),
-  s: rem(16px),
-  b: rem(18px),
-  l: rem(22px),
-  xl: rem(36px)
-);
-
-// -------------------------
-//  BREAKPOINTS
-//--------------------------
-
-@include breakpoint(desktop) {
-  .desktop-hide {
-    display: none !important;
-  }
-}
-
-// Tablet
-@include breakpoint(tablet) {
-  .tablet-hide {
-    display: none !important;
-  }
-}
-
-// Mobile
-@include breakpoint(mobile) {
-  .mobile-hide {
-    display: none !important;
-  }
-}
+$primary-color: #ec7000;
+$secondary-color: #003399;
+$dark: #303030;
+$dark-light: #7c7c7c;
+$light: #fff;
