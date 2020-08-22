@@ -1,0 +1,57 @@
+.box-lancamentos {
+  margin: 15px;
+  border: 1px solid #ccc;
+  border-radius: 9px;
+  box-shadow: 0 0 1em #ccc;
+  height: 292px;
+  width: 828px;
+
+
+  &-container {
+    padding-left: 20px;
+    padding-top: 20px;
+    margin: 10px;
+  }
+
+  &-title {
+    color: $primary-color;
+    margin-bottom: 10px;
+  }
+
+  &-label {
+    color: $primary-color;
+  }
+
+  &-data {
+    color: $dark-light;
+    margin-top: 50px;
+  }
+
+  &-header {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: $primary-color;
+  }
+
+  &-row {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  & label  {
+    display: inline-block;
+    width: 250px;
+  }
+
+&-header label {j
+    color: $primary-color;
+  }
+
+&-row label {
+    color: $dark-light;
+  }
+}
+
+
+
+
