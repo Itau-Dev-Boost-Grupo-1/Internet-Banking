@@ -1,0 +1,51 @@
+// -------------------------
+//  COMPONENT STYLES
+//--------------------------
+
+.extract-box {
+  border: 1px solid $dark-lighter;
+  border-radius: 10px;
+  box-shadow: $shadow;
+  width: 100%;
+  padding: 36px;
+
+  &__title {
+    color: $primary-color;
+    font-size: 22px;
+    margin: 0 0 48px;
+  }
+}
+
+.extract-box__table {
+  width: 100%;
+
+  &-head {
+    color: $primary-color;
+    font-weight: bold;
+    margin: 0 0 26px;
+
+    tr {
+      border-bottom: 25px solid $light;
+    }
+
+    &:last-child {
+      text-align: right;
+    }
+
+    &:not(:last-child) {
+      text-align: left;
+    }
+  }
+
+  &-body {
+    color: $dark-light;
+
+    &::before {
+      line-height: 1em;
+      content: ".";
+      color: $light;
+      height: 25px;
+      display: block;
+    }
+  }
+}

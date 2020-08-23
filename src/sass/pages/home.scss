@@ -1,1 +1,38 @@
+// -------------------------
+//  BASE IMPORT
+//--------------------------
+@import "../base/all";
+
+// -------------------------
+//  COMPONENTS IMPORT
+//--------------------------
 @import "../components/sidebar";
+@import "../components/extract-box";
+@import "../components/card-link";
+@import "../components/search";
+@import "../components/menu";
+
+// -------------------------
+//  PAGE STYLES
+//--------------------------
+.main-content {
+  background: $light;
+  margin: 0 0 0 90px;
+  width: calc(68% - 90px);
+  padding: 40px 30px 0;
+}
+
+// -------------------------
+//  MEDIA QUERIES
+//--------------------------
+
+@include breakpoint(desktop-max) {
+  .main-content {
+    width: 100%;
+    padding: 0 30px;
+    margin: 40px auto 0;
+  }
+}
+
+@include breakpoint(mobile) {
+}
