@@ -12,7 +12,7 @@ var browserSync = require("browser-sync").create();
 var sass = require("gulp-sass");
 
 // SCRIPTS TASK
-gulp.task("scripts", function() {
+gulp.task("scripts", function () {
   gulp
     .src("src/js/**/*.js")
     .pipe(uglify().on("error", gulpUtil.log))
@@ -20,34 +20,31 @@ gulp.task("scripts", function() {
 });
 
 // Image Minification
-gulp.task("images", function() {
-  gulp
-    .src("src/img/*")
-    .pipe(imageMin())
-    .pipe(gulp.dest("dist/img"));
+gulp.task("images", function () {
+  gulp.src("src/img/*").pipe(imageMin()).pipe(gulp.dest("dist/img"));
 });
 
 // Get the final SCSS file and convert to CSS
-gulp.task("styles", function() {
+gulp.task("styles", function () {
   gulp
     .src("src/sass/pages/*.scss")
     .pipe(
       sass({
-        outputStyle: "compressed"
+        outputStyle: "compressed",
       }).on("error", sass.logError)
     )
     .pipe(
       prefix({
-        browsers: ["last 2 versions"]
+        overrideBrowserslist: ["last 2 versions"],
       })
     )
     .pipe(gulp.dest("dist/css"))
     .pipe(browserSync.stream());
 });
 
-gulp.task("serve", ["scripts", "styles"], function() {
+gulp.task("serve", ["scripts", "styles"], function () {
   browserSync.init({
-    server: "./"
+    server: "./",
   });
 
   gulp.watch("src/js/**/*.js", ["scripts"]);
