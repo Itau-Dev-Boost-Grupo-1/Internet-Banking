@@ -1,7 +1,7 @@
 @import "../base/all";
 
 /*Resize the wrap to see the search bar change!*/
-.searchbox{
+.searchbox {
   position: absolute;
   width: 827px;
   height: 68px;
@@ -25,24 +25,25 @@
   border-radius: 5px 0 0 5px;
   outline: none;
   color: #000000;
-    &--button {
-      width: 60px;
-      height: 50px;
-      border: 3px solid $primary-color;
-      background: transparent;
-      text-align: center;
-      color: #fff;
-      border-radius: 0 5px 5px 0;
-      cursor: pointer;
-      font-size: 20px;
-      margin: auto;
-    }
-   &--icon{
-     display: block;
-     margin: auto;
-   }
+
+  &--button {
+    width: 60px;
+    height: 50px;
+    border: 3px solid $primary-color;
+    background: transparent;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+    margin: auto;
+  }
+  &--icon {
+    display: block;
+    margin: auto;
+  }
 }
 
-.searchbox__term:focus{
+.searchbox__term:focus {
   color: $primary-color;
 }
