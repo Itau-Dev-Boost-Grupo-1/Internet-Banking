@@ -9,6 +9,10 @@
   width: 100%;
   padding: 36px;
 
+  &--cards {
+    margin: 38px auto;
+  }
+
   &__title {
     color: $primary-color;
     font-size: 22px;
@@ -22,11 +26,6 @@
   &-head {
     color: $primary-color;
     font-weight: bold;
-    margin: 0 0 26px;
-
-    tr {
-      border-bottom: 25px solid $light;
-    }
 
     &:last-child {
       text-align: right;
@@ -47,5 +46,19 @@
       height: 25px;
       display: block;
     }
+
+    tr > td {
+      padding-bottom: 15px;
+    }
+  }
+}
+
+@include breakpoint(desktop-max) {
+  .extract-box__overflow {
+    overflow-x: scroll;
+  }
+
+  .extract-box__table {
+    min-width: 500px;
   }
 }

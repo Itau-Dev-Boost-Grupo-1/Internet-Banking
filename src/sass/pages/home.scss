@@ -11,6 +11,7 @@
 @import "../components/card-link";
 @import "../components/search";
 @import "../components/menu";
+@import "../components/balance-cards";
 
 // -------------------------
 //  PAGE STYLES
@@ -32,7 +33,4 @@
     padding: 0 30px;
     margin: 40px auto 0;
   }
-}
-
-@include breakpoint(mobile) {
 }
