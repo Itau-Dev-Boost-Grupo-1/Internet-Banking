@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="pt_BR">
+  <head>
+    <meta charset="utf-8" />
+    <title>Itaú - Internet Banking</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <link href="./css/home.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main>
+      <div class="menu">
+        <div class="menu__content">
+          <div class="menu__logo">
+            <img src="./img/logo__itau.png" alt="Itaú Unibanco" />
+          </div>
+
+          <div class="menu__toggle">
+            <img src="./img/icon__menu.svg" alt="Ícone de Menu" />
+            Menu
+          </div>
+        </div>
+      </div>
+
+      <aside class="sidebar">
+        <div class="sidebar__content">
+          <div class="sidebar__profile">
+            <p class="sidebar__profile-name">Olá, <span>Fulano</span></p>
+
+            <img
+              class="sidebar__profile-icon"
+              src="./img/icon__user.svg"
+              alt="Icone de usuário"
+            />
+
+            <a href="#" class="sidebar__profile-link">
+              <img src="./img/icon__link.svg" alt="Ícone de link externo" />
+              <span>Perfil completo</span>
+            </a>
+          </div>
+
+          <ul class="sidebar__links">
+            <li class="sidebar__links-item">
+              <a href="#" class="card-link">
+                <img
+                  src="./img/icon__talk.svg"
+                  alt="Balões de fala"
+                  class="card-link__icon"
+                />
+                <span class="card-link__title">Falar com gerente</span>
+              </a>
+            </li>
+
+            <li class="sidebar__links-item">
+              <a href="#" class="card-link">
+                <img
+                  src="./img/icon__transfer.svg"
+                  alt="Balões de fala"
+                  class="card-link__icon"
+                />
+                <span class="card-link__title">Transferências</span>
+              </a>
+            </li>
+
+            <li class="sidebar__links-item">
+              <a href="#" class="card-link">
+                <img
+                  src="./img/icon__invoice.svg"
+                  alt="Balões de fala"
+                  class="card-link__icon"
+                />
+                <span class="card-link__title">Pagamentos</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <div class="main-content">
+        <div class="search">
+          <div class="search__wrapper">
+            <input
+              type="text"
+              class="search__input"
+              placeholder="Faça sua busca"
+            />
+
+            <button type="submit" class="search__button">
+              <img src="./img/icon__search.svg" alt="Ícone de Lupa" />
+            </button>
+          </div>
+        </div>
+
+        <div class="balance-cards">
+          <div class="balance-cards__item balance-cards__item--highlight">
+            <h3 class="balance-cards__item-title">Conta Corrente</h3>
+            <p class="balance-cards__item-amount">3.000,00</p>
+          </div>
+
+          <div class="balance-cards__item">
+            <h3
+              class="balance-cards__item-title balance-cards__item-title--orange"
+            >
+              Conta Poupança
+            </h3>
+            <p class="balance-cards__item-amount">285,96</p>
+          </div>
+
+          <div class="balance-cards__item">
+            <h3
+              class="balance-cards__item-title balance-cards__item-title--blue"
+            >
+              Cheque Especial
+            </h3>
+            <p class="balance-cards__item-amount">7.000,00</p>
+          </div>
+        </div>
+
+        <div class="extract-box">
+          <div class="extract-box__container">
+            <h3 class="extract-box__title">Últimos Lançamentos</h3>
+
+            <div class="extract-box__overflow">
+              <table class="extract-box__table">
+                <thead class="extract-box__table-head">
+                  <tr>
+                    <th>Data</th>
+                    <th>Descrição</th>
+                    <th>Valor (R$)</th>
+                  </tr>
+                </thead>
+
+                <tbody class="extract-box__table-body">
+                  <tr>
+                    <td>21/08</td>
+                    <td>Saldo</td>
+                    <td>690,00</td>
+                  </tr>
+                  <tr>
+                    <td>21/08</td>
+                    <td>INT TIT PAG BANCO 033</td>
+                    <td>690,00</td>
+                  </tr>
+                  <tr>
+                    <td>21/08</td>
+                    <td>Saldo</td>
+                    <td>690,00</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="extract-box extract-box--cards">
+          <div class="extract-box__container">
+            <h3 class="extract-box__title">Cartões</h3>
+
+            <div class="extract-box__overflow">
+              <table class="extract-box__table">
+                <thead class="extract-box__table-head">
+                  <tr>
+                    <th>Cartão</th>
+                    <th>Vencimento</th>
+                    <th>Valor (R$)</th>
+                    <th>Fatura</th>
+                  </tr>
+                </thead>
+
+                <tbody class="extract-box__table-body">
+                  <tr>
+                    <td>Itaú Uniclass Multiplo</td>
+                    <td>10/09/2020</td>
+                    <td>690,00</td>
+                    <td>aberta</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

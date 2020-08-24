@@ -1,0 +1,102 @@
+// -------------------------
+//  COMPONENT STYLES
+//--------------------------
+
+.sidebar {
+  background-color: $primary-color-lighter;
+  padding: 40px 50px;
+  height: 100vh;
+  width: 32%;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  &__content {
+    margin: 0 auto;
+  }
+}
+
+.sidebar__profile {
+  background: $light;
+  box-shadow: $shadow;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  &-name {
+    color: $dark;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+
+    span {
+      color: $primary-color;
+      display: block;
+
+      &::after {
+        content: ".";
+        color: $dark;
+      }
+    }
+  }
+
+  &-icon {
+    margin: 0;
+  }
+
+  &-link {
+    color: $dark;
+    width: 100%;
+    margin: 40px 0 0;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+
+    & > * {
+      margin: 0;
+    }
+
+    img {
+      margin: 0 12px 0 0;
+    }
+
+    &:hover span {
+      text-decoration: underline;
+    }
+  }
+}
+
+.sidebar__links {
+  margin: 42px auto 0;
+  list-style: none;
+
+  &-item:not(:last-child) {
+    margin: 0 0 36px;
+  }
+}
+
+// -------------------------
+//  MEDIA QUERIES
+//--------------------------
+
+@include breakpoint(desktop-max) {
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 90px auto 0;
+
+    &__content {
+      max-width: 450px;
+    }
+  }
+}
+
+@include breakpoint(mobile) {
+  .sidebar {
+    padding: 30px;
+  }
+}
