@@ -32,7 +32,7 @@ gulp.task("scripts", function () {
 
 // Deploy
 gulp.task("deploy", function () {
-  return gulp.src("./dist/**/*").pipe(deploy());
+  return gulp.src("./dist/**/*").pipe(ghPages());
 });
 
 // Image Minification
